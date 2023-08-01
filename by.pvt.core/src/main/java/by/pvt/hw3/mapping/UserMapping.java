@@ -12,7 +12,7 @@ import java.util.Optional;
 public class UserMapping {
     public UserResponse responseUser(User user) {
         UserResponse userResponse = new UserResponse(user.getId(), user.getName() + " " + user.getSurname()
-                , user.getLogin(), Role.CLIENT);
+                , user.getLogin());
         return userResponse;
     }
 
